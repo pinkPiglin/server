@@ -1,8 +1,8 @@
 import express from "express";
 import mongoose from "mongoose";
 import router from "./router.js";
-import cors from 'cors'
-
+// import cors from 'cors'
+const cors = require('cors')
 
 const PORT = process.env.PORT || 5001; //http://localhost:5001/api
 const DB_URL = 'mongodb+srv://pinkPiglin:Kostya3415@cluster0.dcpwxsg.mongodb.net?retryWrites=true&w=majority';
