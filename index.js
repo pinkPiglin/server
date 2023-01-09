@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 5001; //http://localhost:5001/api
 const DB_URL = 'mongodb+srv://pinkPiglin:Kostya3415@cluster0.dcpwxsg.mongodb.net?retryWrites=true&w=majority';
 
 
-var whitelist = ['https://pinkpiglin.github.io', 'http://localhost:3000']
-var corsOptions = {
+const whitelist = ['https://pinkpiglin.github.io', 'http://localhost:3000']
+const corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
       callback(null, true)
